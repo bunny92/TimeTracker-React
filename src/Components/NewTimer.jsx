@@ -13,6 +13,7 @@ export default function Newtimer(props) {
   const sendTitle = (e) => {
     e.preventDefault();
     props.addTimmer(title);
+    setTitle("");
   };
 
   return (

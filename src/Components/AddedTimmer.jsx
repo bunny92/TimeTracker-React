@@ -79,13 +79,16 @@ export default function AddedTimmer(props) {
           ) : (
             <Typography variant="h5" component="h2">
               {titleText}
-              <span className={classes.icons}>
-                <EditIcon
-                  fontSize="small"
-                  color="primary"
-                  onClick={editModeSwitch}
-                />
-              </span>
+              {!isActive && (
+                <span className={classes.icons}>
+                  <EditIcon
+                    fontSize="small"
+                    color="primary"
+                    onClick={editModeSwitch}
+                  />
+                </span>
+              )}
+
               <hr />
             </Typography>
           )}

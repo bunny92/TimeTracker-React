@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { CssBaseline, Container } from "@material-ui/core";
 import NewTimmer from "./NewTimer.jsx";
 import AddedTimmer from "./AddedTimmer.jsx";
-import dataList from "../addTimmerList.js";
+import dataList from "../addTimmerList.js"; //dummy data store
 import { v4 as uuid } from "uuid";
 
 export default function CreateTimmer(props) {
@@ -84,6 +84,7 @@ export default function CreateTimmer(props) {
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
+
       {console.log(timerList, "timerList")}
       {timerList.length > 0 &&
         timerList.map((a, i) => {
