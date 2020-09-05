@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Button,
   Typography,
@@ -54,7 +54,7 @@ export default function AddedTimmer(props) {
 
   return (
     <>
-      <Card className={classes.root}>
+      <Card className={classes.root} key={id}>
         <CardContent>
           {editMode ? (
             <Typography variant="h5" component="h2">
